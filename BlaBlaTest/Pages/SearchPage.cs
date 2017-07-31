@@ -24,7 +24,7 @@ namespace BlaBlaTest
         [FindsBy(How = How.XPath, Using = ".//*[@id='search-form']/input")]
         IWebElement SearchButton { get; set; }
 
-        public void FillSearchForm(BlaBlaSearchModel search)
+        public void FillSearchForm(SearchModel search)
         {
             ChooseDate(search.WhenDate);
             ChooseFrom(search.From);
@@ -43,6 +43,7 @@ namespace BlaBlaTest
         {
             SearchFromField.Click();
             SearchFromField.SendKeys(from);
+            //
         }
 
 

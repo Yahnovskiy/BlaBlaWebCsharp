@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace BlaBlaTest
 {
-    public class BlaBlaSearchModel
+    public class SearchModel
     {
         public string From { get; set; }
         public string Destinatiom { get; set; }
         public string WhenDate { get; set; }
         public int DaysFromNow { get; set; }
 
-        public BlaBlaSearchModel() { }
+        public SearchModel() { }
 
         //public BlaBlaSearchModel(string from, string destinatiom, int daysFromNow)
         //{

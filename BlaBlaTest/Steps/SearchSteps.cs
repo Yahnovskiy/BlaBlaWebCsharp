@@ -10,7 +10,7 @@ namespace BlaBlaTest
         [Given("I fill search field")]
         public void GivenIFillSearchField(Table table)
         {
-            BlaBlaSearchModel search = table.CreateInstance<BlaBlaSearchModel>();
+            SearchModel search = table.CreateInstance<SearchModel>();
             search.WhenDate = DateTime.Now.AddDays(search.DaysFromNow).ToString("dd");
             Pages.PageSSearch.FillSearchForm(search);
 
