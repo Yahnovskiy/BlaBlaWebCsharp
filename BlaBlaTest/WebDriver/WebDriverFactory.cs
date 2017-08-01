@@ -33,7 +33,7 @@ namespace BlaBlaTest.WebDriver
             {
                 case Browser.Chrome:
                     capabilities = DesiredCapabilities.Chrome();
-                    capabilities.SetCapability(CapabilityType.BrowserName, "Chrome");
+                    capabilities.SetCapability(CapabilityType.BrowserName, "chrome");
                     break;
                 case Browser.Firefox:
                     capabilities = DesiredCapabilities.Firefox();

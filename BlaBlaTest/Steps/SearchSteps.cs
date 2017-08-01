@@ -5,7 +5,7 @@ using TechTalk.SpecFlow.Assist;
 namespace BlaBlaTest
 {
     [Binding]
-    public class BlaBlaSteps : StepBase
+    public class SearchSteps : StepBase
     {
         [Given("I fill search field")]
         public void GivenIFillSearchField(Table table)

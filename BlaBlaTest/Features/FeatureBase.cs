@@ -25,7 +25,7 @@ namespace BlaBlaTest
                        
             PM = new PageManager(Driver);
             TestHelpers.AddToCurrentFeatureContext(TestData.PageManager, PM);
-            //PM.PageLogin.LogIn(Env.UserNameToLogin, Env.UserPasswordToLogin);
+            PM.PageLogin.LogIn(Env.UserNameToLogin, Env.UserPasswordToLogin);
       }
 
         [AfterScenario]

@@ -65,11 +65,11 @@ namespace BlaBlaTest.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add two numbers")]
+        [NUnit.Framework.DescriptionAttribute("Serarch (unauthorized)")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void AddTwoNumbers()
+        public virtual void SerarchUnauthorized()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add two numbers", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Serarch (unauthorized)", new string[] {
                         "mytag"});
 #line 7
 this.ScenarioSetup(scenarioInfo);
@@ -84,6 +84,34 @@ this.ScenarioSetup(scenarioInfo);
                         "0"});
 #line 8
  testRunner.Given("I fill search field", ((string)(null)), table1, "Given ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Authorization")]
+        [NUnit.Framework.CategoryAttribute("mytag")]
+        public virtual void Authorization()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Authorization", new string[] {
+                        "mytag"});
+#line 13
+this.ScenarioSetup(scenarioInfo);
+#line 14
+testRunner.Given("User profile is visible", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Logout")]
+        [NUnit.Framework.CategoryAttribute("tag")]
+        public virtual void Logout()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Logout", new string[] {
+                        "tag"});
+#line 17
+this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
