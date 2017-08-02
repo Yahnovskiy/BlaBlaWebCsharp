@@ -21,6 +21,7 @@ namespace BlaBlaTest
             catch (KeyNotFoundException ex)
             {
                 Console.WriteLine($"Cant get value for key '{key}':\n {ex}");
+                //
                 return (T)Convert.ChangeType(null, typeof(T));
             }
         }

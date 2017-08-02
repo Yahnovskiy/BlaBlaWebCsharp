@@ -9,7 +9,7 @@ namespace BlaBlaTest
         [Given(@"User profile is visible")]
         public void GivenUserProfileIsVisible()
         {
-            
+            Pages.PageHome.IsUserProfileVisible();
         }
     }
 }

@@ -11,13 +11,10 @@ namespace BlaBlaTest
     public class LoginPage : Page
     {
         public LoginPage(IWebDriver driver) : base(driver) { }
-
+                
         [FindsBy(How = How.XPath, Using = ".//*[@class='Header-navigationText dropdown-toggle']")]
         IWebElement PopupLoginWindow { get; set; }
-
-        [FindsBy(How = How.XPath, Using = "")]
-        IWebElement LoginButton { get; set; }
-
+                
         [FindsBy(How = How.Name, Using = "_username")]
         IWebElement UserNameInput { get; set; }
 
@@ -37,8 +34,6 @@ namespace BlaBlaTest
             PasswordInput.Clear();
             PasswordInput.SendKeys(password);
             SubmitButton.Click();
-        }
-
-
+        }        
     }
 }

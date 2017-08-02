@@ -9,8 +9,8 @@ namespace BlaBlaTest
     public class StageBetaTestEnvironmentData : ITestEnvironmentData
     {
         public string BaseUrl { get; } = "https://www.blablacar.com.ua/";
-        public string UserNameToLogin { get; } = "us\\Roman";
-        public string UserPasswordToLogin { get; } = "qweqweqwe";
+        public string UserNameToLogin { get; } = "bigbubble.e@bigmir.net";
+        public string UserPasswordToLogin { get; } = "bigbubble";
         //public List<string> OfficesForTest { get; } = new List<string> { "9242", "9262", "9402" };
     }
 }

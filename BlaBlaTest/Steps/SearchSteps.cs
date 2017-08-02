@@ -8,9 +8,9 @@ namespace BlaBlaTest
     public class SearchSteps : StepBase
     {
         [Given("I fill search field")]
-        public void GivenIFillSearchField(Table table)
+        public void GivenIFillSearchField(Table tableX)
         {
-            SearchModel search = table.CreateInstance<SearchModel>();
+            SearchModel search = tableX.CreateInstance<SearchModel>();
             search.WhenDate = DateTime.Now.AddDays(search.DaysFromNow).ToString("dd");
             Pages.PageSSearch.FillSearchForm(search);
 

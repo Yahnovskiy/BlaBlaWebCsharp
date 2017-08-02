@@ -15,7 +15,7 @@ namespace BlaBlaTest
     protected DefaultWait<IWebDriver> FluentWait;
     protected IWebDriver _driver;
 
-    public Page(IWebDriver driver)
+        public Page(IWebDriver driver)
     {
         _driver = driver;
         Wait = new WebDriverWait(_driver, new TimeSpan(0, 0, 0, 30));
@@ -29,5 +29,23 @@ namespace BlaBlaTest
         PageFactory.InitElements(_driver, this);
         //Wait.Until(driver1 => ((IJavaScriptExecutor)driver).ExecuteScript("return document.readyState").Equals("complete"));
     }
-}
-}
+
+
+        public static bool ElementIsPresent(IWebElement element)
+        {
+            try
+            {
+                return element.Displayed;
+            }
+            catch (NoSuchElementException e)
+            {
+                return false;
+            }
+            
+        }
+    }
+ }
+
+
+    
+
