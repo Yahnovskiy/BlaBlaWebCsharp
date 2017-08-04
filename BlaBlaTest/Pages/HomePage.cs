@@ -14,7 +14,7 @@ namespace BlaBlaTest
     {
         public HomePage(IWebDriver driver) : base(driver) { }
 
-        [FindsBy(How = How.XPath, Using = ".//span[@class = 'HHeader-navigationAvatar']")]
+        [FindsBy(How = How.XPath, Using = ".//span[@class = 'Header-navigationAvatar']")]
         IWebElement LoggedInnavigationAvatar { get; set; }
 
         [FindsBy(How = How.XPath, Using = "//a[@href='/viyti']")]
@@ -22,12 +22,9 @@ namespace BlaBlaTest
 
         [FindsBy(How = How.XPath, Using = "//a[@href='/poshuk-poyizdki']")]
         IWebElement SearchButtonScreen { get; set; }
-
-
-
+        
         public void IsUserProfileVisible()
-        {
-            //FluentWait.Until(ExpectedConditions.ElementToBeClickable(LoggedInnavigationAvatar));
+        {            
             Assert.AreEqual(true, ElementIsPresent(LoggedInnavigationAvatar)); // Visible Works
         }
     }

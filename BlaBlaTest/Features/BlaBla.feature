@@ -2,6 +2,9 @@
 	In order to avoid silly mistakes
 	As a math idiot
 	I want to be told the sum of two numbers
+@mytag
+Scenario: Authorization
+Given User profile is visible
 
 @mytag
 Scenario: Serarch (unauthorized)
@@ -9,9 +12,7 @@ Scenario: Serarch (unauthorized)
 	 | From | Destinatiom | DaysFromNow |
 	 | Kiev | Fastov      |      0      |
 
-@mytag
-Scenario: Authorization
-Given User profile is visible
+
 
 @tag
 Scenario: Logout

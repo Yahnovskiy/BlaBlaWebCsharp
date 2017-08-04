@@ -12,7 +12,7 @@ namespace BlaBlaTest
     {
         public SearchPage(IWebDriver driver) : base(driver){ }
 
-        [FindsBy(How = How.XPath, Using = ".//*[@id='search_to_date']")]
+        [FindsBy(How = How.XPath, Using = ".//*[@class='search-date date-picker hasDatepicker']")]
         IWebElement CalendarPicker { get; set; }
             
         [FindsBy(How = How.XPath, Using = ".//*[@id='search_from_name']")]
@@ -24,8 +24,12 @@ namespace BlaBlaTest
         [FindsBy(How = How.XPath, Using = ".//*[@id='search-form']/input")]
         IWebElement SearchButton { get; set; }
 
+        [FindsBy(How = How.XPath, Using = "//a[@href='/poshuk-poyizdki']")]
+        IWebElement SearchButtonScreen { get; set; }
+
         public void FillSearchForm(SearchModel search)
         {
+            SearchButtonScreen.Click();
             ChooseDate(search.WhenDate);
             ChooseFrom(search.From);
         }

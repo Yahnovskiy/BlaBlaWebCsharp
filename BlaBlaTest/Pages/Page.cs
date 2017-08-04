@@ -37,7 +37,7 @@ namespace BlaBlaTest
             {
                 return element.Displayed;
             }
-            catch (NoSuchElementException e)
+            catch (NoSuchElementException)
             {
                 return false;
             }

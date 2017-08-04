@@ -65,13 +65,28 @@ namespace BlaBlaTest.Features
         }
         
         [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Authorization")]
+        [NUnit.Framework.CategoryAttribute("mytag")]
+        public virtual void Authorization()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Authorization", new string[] {
+                        "mytag"});
+#line 6
+this.ScenarioSetup(scenarioInfo);
+#line 7
+testRunner.Given("User profile is visible", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Serarch (unauthorized)")]
         [NUnit.Framework.CategoryAttribute("mytag")]
         public virtual void SerarchUnauthorized()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Serarch (unauthorized)", new string[] {
                         "mytag"});
-#line 7
+#line 10
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
@@ -82,23 +97,8 @@ this.ScenarioSetup(scenarioInfo);
                         "Kiev",
                         "Fastov",
                         "0"});
-#line 8
+#line 11
  testRunner.Given("I fill search field", ((string)(null)), table1, "Given ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Authorization")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void Authorization()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Authorization", new string[] {
-                        "mytag"});
-#line 13
-this.ScenarioSetup(scenarioInfo);
-#line 14
-testRunner.Given("User profile is visible", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -110,7 +110,7 @@ testRunner.Given("User profile is visible", ((string)(null)), ((TechTalk.SpecFlo
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Logout", new string[] {
                         "tag"});
-#line 17
+#line 18
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
