@@ -23,10 +23,18 @@ namespace BlaBlaTest
         [FindsBy(How = How.XPath, Using = "//a[@href='/poshuk-poyizdki']")]
         IWebElement SearchButtonScreen { get; set; }
         
+
+
+
         public void IsUserProfileVisible()
         {            
             Assert.AreEqual(true, ElementIsPresent(LoggedInnavigationAvatar)); // Visible Works
         }
+
+
+
+
+        
     }
 }
 

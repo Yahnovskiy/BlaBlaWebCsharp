@@ -12,9 +12,8 @@ Scenario: Serarch (unauthorized)
 	 | From | Destinatiom | DaysFromNow |
 	 | Kiev | Fastov      |      0      |
 
-
-
 @tag
-Scenario: Logout
+Scenario: Repeat action every day for current week
+Given Click user profile every day for current week
 
 

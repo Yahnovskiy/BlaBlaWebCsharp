@@ -104,14 +104,16 @@ this.ScenarioSetup(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Logout")]
+        [NUnit.Framework.DescriptionAttribute("Repeat action every day for current week")]
         [NUnit.Framework.CategoryAttribute("tag")]
-        public virtual void Logout()
+        public virtual void RepeatActionEveryDayForCurrentWeek()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Logout", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Repeat action every day for current week", new string[] {
                         "tag"});
-#line 18
+#line 16
 this.ScenarioSetup(scenarioInfo);
+#line 17
+testRunner.Given("Click user profile every day for current week", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             this.ScenarioCleanup();
         }

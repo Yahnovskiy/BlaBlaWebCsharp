@@ -11,7 +11,7 @@ namespace BlaBlaTest
         public void GivenIFillSearchField(Table tableX)
         {
             SearchModel search = tableX.CreateInstance<SearchModel>();
-            search.WhenDate = DateTime.Now.AddDays(search.DaysFromNow).ToString("dd");
+            search.WhenDate = DateTime.Now.AddDays(search.DaysFromNow).Day.ToString();
             Pages.PageSSearch.FillSearchForm(search);
 
             //BlaBlaSearchModel.WhenDate = 

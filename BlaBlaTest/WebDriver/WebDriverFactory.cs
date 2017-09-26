@@ -49,6 +49,7 @@ namespace BlaBlaTest.WebDriver
                     capabilities.SetCapability(CapabilityType.BrowserName, "PhantomJS");
                     break;
                 default:
+                    //throw new Exception("Unknown driver type");
                     break;
             }
 
